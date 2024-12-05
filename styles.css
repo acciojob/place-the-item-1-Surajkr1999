@@ -1,10 +1,20 @@
-
+/* Flex container */
 .holder {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+  display: flex;                 /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly with first and last touching edges */
+  flex-wrap: wrap;               /* Allows items to wrap to the next row */
+  gap: 10px;                     /* Adds spacing between items */
+  padding: 0 10px;               /* Optional: Adds padding to ensure edges are clean */
+  box-sizing: border-box;        /* Ensures padding and borders are included */
+  width: 100%;                   /* Makes the container span the full screen width */
 }
+
+/* Individual items */
 .item {
-	width: 100px;
-	height: 100px;
+  flex: 0 1 100px;               /* Items have a fixed width of 100px and do not grow or shrink */
+  height: 100px;                 /* Fixed height for items */
+  background-color: lightgray;   /* Adds a background for visibility */
+  text-align: center;            /* Centers text inside items */
+  border: 1px solid #ccc;        /* Adds a border for clarity */
+  box-sizing: border-box;        /* Ensures padding and borders are included */
 }
